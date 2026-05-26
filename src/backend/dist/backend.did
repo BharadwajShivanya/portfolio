@@ -1,0 +1,135 @@
+type Url = text;
+type Timestamp = int;
+type TimelineEntryInput = 
+ record {
+   category: TimelineCategory;
+   description: text;
+   title: text;
+   year: nat;
+ };
+type TimelineEntry = 
+ record {
+   category: TimelineCategory;
+   description: text;
+   id: nat;
+   title: text;
+   year: nat;
+ };
+type TimelineCategory = 
+ variant {
+   award;
+   career;
+   publication;
+ };
+type ResearchType = 
+ variant {
+   article;
+   paper;
+ };
+type ResearchInput = 
+ record {
+   abstract: text;
+   coAuthors: vec text;
+   pdfUrl: Url;
+   resType: ResearchType;
+   title: text;
+   venue: text;
+   year: nat;
+ };
+type Research = 
+ record {
+   abstract: text;
+   coAuthors: vec text;
+   id: nat;
+   pdfUrl: Url;
+   resType: ResearchType;
+   title: text;
+   venue: text;
+   year: nat;
+ };
+type PublicationType = 
+ variant {
+   book;
+   paper;
+ };
+type PublicationInput = 
+ record {
+   coverImageUrl: Url;
+   description: text;
+   isbn: text;
+   pubType: PublicationType;
+   publisher: text;
+   purchaseLink: Url;
+   title: text;
+   year: nat;
+ };
+type Publication = 
+ record {
+   coverImageUrl: Url;
+   description: text;
+   id: nat;
+   isbn: text;
+   pubType: PublicationType;
+   publisher: text;
+   purchaseLink: Url;
+   title: text;
+   year: nat;
+ };
+type GalleryImageInput = 
+ record {
+   caption: text;
+   eventName: text;
+   imageUrl: Url;
+   year: nat;
+ };
+type GalleryImage = 
+ record {
+   caption: text;
+   eventName: text;
+   id: nat;
+   imageUrl: Url;
+   year: nat;
+ };
+type ContactMessageInput = 
+ record {
+   email: text;
+   message: text;
+   name: text;
+   subject: text;
+ };
+type ContactMessage = 
+ record {
+   email: text;
+   id: nat;
+   message: text;
+   name: text;
+   subject: text;
+   timestamp: Timestamp;
+ };
+service : {
+  addGalleryImage: (input: GalleryImageInput) -> (GalleryImage);
+  addPublication: (input: PublicationInput) -> (Publication);
+  addResearch: (input: ResearchInput) -> (Research);
+  addTimelineEntry: (input: TimelineEntryInput) -> (TimelineEntry);
+  deleteContactMessage: (id: nat) -> (bool);
+  deleteGalleryImage: (id: nat) -> (bool);
+  deletePublication: (id: nat) -> (bool);
+  deleteResearch: (id: nat) -> (bool);
+  deleteTimelineEntry: (id: nat) -> (bool);
+  getGalleryImage: (id: nat) -> (opt GalleryImage) query;
+  getPublication: (id: nat) -> (opt Publication) query;
+  getResearch: (id: nat) -> (opt Research) query;
+  getTimelineEntry: (id: nat) -> (opt TimelineEntry) query;
+  listContactMessages: () -> (vec ContactMessage) query;
+  listGalleryImages: () -> (vec GalleryImage) query;
+  listPublications: () -> (vec Publication) query;
+  listResearch: () -> (vec Research) query;
+  listTimelineEntries: () -> (vec TimelineEntry) query;
+  submitContactMessage: (input: ContactMessageInput) -> (ContactMessage);
+  updateGalleryImage: (id: nat, input: GalleryImageInput) ->
+   (opt GalleryImage);
+  updatePublication: (id: nat, input: PublicationInput) -> (opt Publication);
+  updateResearch: (id: nat, input: ResearchInput) -> (opt Research);
+  updateTimelineEntry: (id: nat, input: TimelineEntryInput) ->
+   (opt TimelineEntry);
+}

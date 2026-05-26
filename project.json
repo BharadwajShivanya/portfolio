@@ -1,0 +1,25 @@
+{
+  "overview": "A modern, elegant academic portfolio website for Dr. I.C. Sharma — scholar, researcher, and author — featuring 7 pages with publications, research, gallery, timeline, and admin uploads.",
+  "features": [
+    "7-page academic portfolio (Home, About, Publications, Research, Timeline, Gallery, Contact)",
+    "Dark mode toggle that persists across pages",
+    "Search and filter publications by title",
+    "Animated interactive academic timeline with scroll-reveal effects",
+    "Gallery with lightbox viewer for academic photos",
+    "Admin upload interface for cover images, PDFs, and gallery photos",
+    "Contact form for academic inquiries",
+    "Responsive design for all screen sizes",
+    "Elegant serif typography with off-white, navy, beige color palette"
+  ],
+  "category": "academic-portfolio",
+  "tags": [
+    "academic",
+    "portfolio",
+    "showcase",
+    "research",
+    "publications",
+    "scholar",
+    "dark-mode"
+  ],
+  "last_updated": "2026-05-26T15:58:53.439Z"
+}

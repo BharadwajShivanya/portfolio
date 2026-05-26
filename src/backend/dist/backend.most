@@ -1,0 +1,93 @@
+// Version: 1.0.0
+type ContactMessage__84138439 =
+  {
+    email : Text;
+    id : Nat;
+    message : Text;
+    name : Text;
+    subject : Text;
+    timestamp : Timestamp__301639476
+  };
+type GalleryImage__1001354798 =
+  {
+    caption : Text;
+    eventName : Text;
+    id : Nat;
+    imageUrl : Url__416326484;
+    year : Nat
+  };
+type Nat__490723111 = Nat__920180692;
+type Nat__920180692 = Nat;
+type PublicationType__308591870 = {#book; #paper};
+type Publication__608925770 =
+  {
+    coverImageUrl : Url__416326484;
+    description : Text;
+    id : Nat;
+    isbn : Text;
+    pubType : PublicationType__308591870;
+    publisher : Text;
+    purchaseLink : Url__416326484;
+    title : Text;
+    year : Nat
+  };
+type ResearchType__326432866 = {#article; #paper};
+type Research__631097394 =
+  {
+    abstract_ : Text;
+    coAuthors : [Text];
+    id : Nat;
+    pdfUrl : Url__416326484;
+    resType : ResearchType__326432866;
+    title : Text;
+    venue : Text;
+    year : Nat
+  };
+type TimelineCategory__551761992 = {#award; #career; #publication};
+type TimelineEntry__926944887 =
+  {
+    category : TimelineCategory__551761992;
+    description : Text;
+    id : Nat;
+    title : Text;
+    year : Nat
+  };
+type Timestamp__301639476 = Int;
+type Url__416326484 = Text;
+actor {
+  stable conState : {var nextId : Nat};
+  stable contactMessages :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?ContactMessage__84138439]];
+      var elementIndex : Nat__490723111
+    };
+  stable galState : {var nextId : Nat};
+  stable galleryImages :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?GalleryImage__1001354798]];
+      var elementIndex : Nat__490723111
+    };
+  stable pubState : {var nextId : Nat};
+  stable publications :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?Publication__608925770]];
+      var elementIndex : Nat__490723111
+    };
+  stable resState : {var nextId : Nat};
+  stable research :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?Research__631097394]];
+      var elementIndex : Nat__490723111
+    };
+  stable timelineEntries :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?TimelineEntry__926944887]];
+      var elementIndex : Nat__490723111
+    };
+  stable tlState : {var nextId : Nat}
+};
