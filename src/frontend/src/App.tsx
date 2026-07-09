@@ -4,8 +4,6 @@ import { Layout } from "./components/Layout";
 
 const HomePage = lazy(() => import("./pages/HomePage"));
 const AboutPage = lazy(() => import("./pages/AboutPage"));
-const PublicationsPage = lazy(() => import("./pages/PublicationsPage"));
-const ResearchPage = lazy(() => import("./pages/ResearchPage"));
 const TimelinePage = lazy(() => import("./pages/TimelinePage"));
 const GalleryPage = lazy(() => import("./pages/GalleryPage"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
@@ -40,22 +38,7 @@ export default function App() {
               </Suspense>
             }
           />
-          <Route
-            path="/publications"
-            element={
-              <Suspense fallback={<PageFallback />}>
-                <PublicationsPage />
-              </Suspense>
-            }
-          />
-          <Route
-            path="/research"
-            element={
-              <Suspense fallback={<PageFallback />}>
-                <ResearchPage />
-              </Suspense>
-            }
-          />
+
           <Route
             path="/timeline"
             element={

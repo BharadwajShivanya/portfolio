@@ -1,4 +1,5 @@
 import { createActor } from "@/backend";
+import { mockBackend } from "@/mocks/backend";
 import type {
   ContactFormData,
   GalleryImage,
@@ -10,7 +11,11 @@ import { useActor } from "@caffeineai/core-infrastructure";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 
 function useActorBase() {
-  return useActor(createActor);
+  const base = useActor(createActor);
+  if (import.meta.env.VITE_USE_MOCK === "true") {
+    return { actor: mockBackend, isFetching: false };
+  }
+  return base;
 }
 
 export function usePublications() {

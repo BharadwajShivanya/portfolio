@@ -1,7 +1,4 @@
-import { usePublications } from "@/hooks/useBackend";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
-import { getPubTypeLabel } from "@/types";
-import type { Publication } from "@/types";
 import { ArrowRight, BookOpen, Mail } from "lucide-react";
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
@@ -15,110 +12,6 @@ const fadeUp = (delay = 0) => ({
     delay,
   },
 });
-
-const PLACEHOLDER_PUBS: Pick<
-  Publication,
-  "title" | "publisher" | "year" | "pubType"
->[] = [
-  {
-    title: "Cognitive Frameworks in Modern Educational Research",
-    publisher: "Oxford Academic Press",
-    year: BigInt(2021),
-    pubType: { "#book": null },
-  },
-  {
-    title: "Interdisciplinary Methods in Humanities Scholarship",
-    publisher: "Cambridge University Press",
-    year: BigInt(2019),
-    pubType: { "#book": null },
-  },
-  {
-    title: "The Philosophy of Language and Cultural Identity",
-    publisher: "Routledge",
-    year: BigInt(2017),
-    pubType: { "#book": null },
-  },
-  {
-    title: "Epistemological Shifts in Post-Colonial Studies",
-    publisher: "SAGE Publications",
-    year: BigInt(2023),
-    pubType: { "#paper": null },
-  },
-];
-
-function FeaturedPublications() {
-  const { data: pubs, isLoading } = usePublications();
-  const sectionRef = useScrollReveal();
-
-  const displayPubs =
-    pubs && pubs.length > 0 ? pubs.slice(0, 4) : PLACEHOLDER_PUBS;
-
-  return (
-    <section
-      className="py-20 px-6 bg-muted/20"
-      data-ocid="home.publications.section"
-    >
-      <div
-        className="max-w-6xl mx-auto"
-        ref={sectionRef as React.RefObject<HTMLDivElement>}
-      >
-        <motion.div {...fadeUp(0)} className="mb-12">
-          <span className="text-xs font-medium uppercase tracking-[0.2em] text-secondary-foreground">
-            Selected Works
-          </span>
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mt-2">
-            Featured Publications
-          </h2>
-          <div className="w-12 h-0.5 bg-secondary mt-4" />
-        </motion.div>
-
-        {isLoading ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[1, 2, 3, 4].map((i) => (
-              <div
-                key={i}
-                className="bg-card rounded-xl p-6 h-48 animate-pulse border border-border"
-              />
-            ))}
-          </div>
-        ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {displayPubs.map((p, i) => (
-              <motion.div
-                key={p.title}
-                {...fadeUp(i * 0.1)}
-                className="bg-card border border-border rounded-xl p-6 flex flex-col gap-3 hover:shadow-md transition-smooth group"
-              >
-                <div className="w-16 h-20 bg-muted rounded flex items-center justify-center border border-border">
-                  <BookOpen className="w-6 h-6 text-muted-foreground" />
-                </div>
-                <span className="text-xs font-medium uppercase tracking-widest text-secondary-foreground bg-secondary/20 border border-secondary/30 px-2 py-0.5 rounded-full w-fit">
-                  {getPubTypeLabel(p.pubType)}
-                </span>
-                <h3 className="font-display text-sm font-semibold leading-snug text-foreground group-hover:text-primary transition-colors">
-                  {p.title}
-                </h3>
-                <p className="text-xs text-muted-foreground">
-                  {p.publisher} · {String(p.year)}
-                </p>
-              </motion.div>
-            ))}
-          </div>
-        )}
-
-        <div className="mt-10 text-center">
-          <Link
-            to="/publications"
-            className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-primary/80 transition-colors border-b border-primary/40 hover:border-primary pb-0.5"
-            data-ocid="home.view_all_publications.link"
-          >
-            View All Publications <ArrowRight className="w-4 h-4" />
-          </Link>
-        </div>
-      </div>
-    </section>
-  );
-}
 
 export default function HomePage() {
   const bioRef = useScrollReveal();
@@ -135,7 +28,15 @@ export default function HomePage() {
         }}
         data-ocid="home.hero.section"
       >
-        <div className="absolute inset-0 bg-background/88" />
+        <div className="absolute inset-0 bg-background/90" />
+        {/* Premium ambient glowing background elements */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none select-none">
+          <div className="absolute -top-48 -right-48 w-[500px] h-[500px] rounded-full bg-primary/8 dark:bg-primary/15 blur-[128px] animate-pulse" />
+          <div
+            className="absolute -bottom-24 -left-24 w-[400px] h-[400px] rounded-full bg-secondary/8 dark:bg-secondary/12 blur-[96px] animate-pulse"
+            style={{ animationDelay: "2.5s" }}
+          />
+        </div>
         <div className="relative z-10 max-w-6xl mx-auto px-6 py-24">
           <motion.div
             initial={{ opacity: 0 }}
@@ -160,12 +61,12 @@ export default function HomePage() {
           </motion.p>
           <motion.div {...fadeUp(0.34)} className="flex flex-wrap gap-4">
             <Link
-              to="/publications"
+              to="/about"
               className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-7 py-3 rounded-lg font-medium text-sm hover:bg-primary/90 transition-smooth shadow-sm"
-              data-ocid="home.hero.publications_cta"
+              data-ocid="home.hero.about_cta"
             >
               <BookOpen className="w-4 h-4" />
-              Explore My Work
+              About Me
             </Link>
             <Link
               to="/contact"
@@ -179,9 +80,6 @@ export default function HomePage() {
         </div>
         <div className="absolute bottom-0 left-0 right-0 h-px bg-border" />
       </section>
-
-      {/* Featured Publications */}
-      <FeaturedPublications />
 
       {/* Biography */}
       <section className="py-20 px-6" data-ocid="home.biography.section">
