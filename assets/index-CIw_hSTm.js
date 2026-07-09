@@ -1,4 +1,4 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/HomePage-CIxVH6un.js","assets/useBackend-B0-FJsEj.js","assets/useScrollReveal-BwoRxRZA.js","assets/book-open-BdrUB-6C.js","assets/AboutPage-CG-sl8a_.js","assets/TimelinePage-BrJ6m_v6.js","assets/skeleton-DHc406Iw.js","assets/GalleryPage-BVzwFhFm.js","assets/image-TxfIc1W7.js","assets/ContactPage-BDN1zzl1.js","assets/AdminPage-Dzvja_Nx.js"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/HomePage-DxQXgp9R.js","assets/useBackend-BJQQYzw9.js","assets/useScrollReveal-CtE2Dph3.js","assets/book-open-60M1Jkpz.js","assets/AboutPage-B9BvMBnf.js","assets/TimelinePage-BSBuXmmQ.js","assets/skeleton-Bsk0OBcI.js","assets/GalleryPage-ThersKdR.js","assets/image-BDRIkHAm.js","assets/ContactPage-DxWLDP-J.js","assets/AdminPage-CP5qTBMK.js"])))=>i.map(i=>d[i]);
 var __defProp = Object.defineProperty;
 var __typeError = (msg) => {
   throw TypeError(msg);
@@ -37574,17 +37574,17 @@ function Layout() {
     /* @__PURE__ */ jsxRuntimeExports.jsx(Toaster, { position: "top-right", richColors: true })
   ] });
 }
-const HomePage = reactExports.lazy(() => __vitePreload(() => import("./HomePage-CIxVH6un.js"), true ? __vite__mapDeps([0,1,2,3]) : void 0));
-const AboutPage = reactExports.lazy(() => __vitePreload(() => import("./AboutPage-CG-sl8a_.js"), true ? __vite__mapDeps([4,2,3]) : void 0));
-const TimelinePage = reactExports.lazy(() => __vitePreload(() => import("./TimelinePage-BrJ6m_v6.js"), true ? __vite__mapDeps([5,6,1,3]) : void 0));
-const GalleryPage = reactExports.lazy(() => __vitePreload(() => import("./GalleryPage-BVzwFhFm.js"), true ? __vite__mapDeps([7,6,1,8]) : void 0));
-const ContactPage = reactExports.lazy(() => __vitePreload(() => import("./ContactPage-BDN1zzl1.js"), true ? __vite__mapDeps([9,1]) : void 0));
-const AdminPage = reactExports.lazy(() => __vitePreload(() => import("./AdminPage-Dzvja_Nx.js"), true ? __vite__mapDeps([10,8]) : void 0));
+const HomePage = reactExports.lazy(() => __vitePreload(() => import("./HomePage-DxQXgp9R.js"), true ? __vite__mapDeps([0,1,2,3]) : void 0));
+const AboutPage = reactExports.lazy(() => __vitePreload(() => import("./AboutPage-B9BvMBnf.js"), true ? __vite__mapDeps([4,2,3]) : void 0));
+const TimelinePage = reactExports.lazy(() => __vitePreload(() => import("./TimelinePage-BSBuXmmQ.js"), true ? __vite__mapDeps([5,6,1,3]) : void 0));
+const GalleryPage = reactExports.lazy(() => __vitePreload(() => import("./GalleryPage-ThersKdR.js"), true ? __vite__mapDeps([7,6,1,8]) : void 0));
+const ContactPage = reactExports.lazy(() => __vitePreload(() => import("./ContactPage-DxWLDP-J.js"), true ? __vite__mapDeps([9,1]) : void 0));
+const AdminPage = reactExports.lazy(() => __vitePreload(() => import("./AdminPage-CP5qTBMK.js"), true ? __vite__mapDeps([10,8]) : void 0));
 function PageFallback() {
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center justify-center min-h-[40vh]", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-8 h-8 rounded-full border-2 border-primary border-t-transparent animate-spin" }) });
 }
 function App() {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(BrowserRouter, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(Routes, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Route, { element: /* @__PURE__ */ jsxRuntimeExports.jsx(Layout, {}), children: [
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(BrowserRouter, { basename: "/portfolio/", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Routes, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Route, { element: /* @__PURE__ */ jsxRuntimeExports.jsx(Layout, {}), children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(
       Route,
       {
