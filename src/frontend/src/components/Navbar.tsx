@@ -1,5 +1,5 @@
 import { useTheme } from "@/hooks/useTheme";
-import { BookOpen, Menu, Moon, Sun, X } from "lucide-react";
+import { Compass, Menu, Moon, Sun, X } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
@@ -31,26 +31,26 @@ export function Navbar() {
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-smooth ${
         scrolled
-          ? "bg-card border-b border-border shadow-subtle"
-          : "bg-card/95 border-b border-border/60"
+          ? "bg-card/95 backdrop-blur-md border-b border-border shadow-subtle"
+          : "bg-card/90 backdrop-blur-sm border-b border-border/40"
       }`}
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link
           to="/"
-          className="flex items-center gap-2 group"
+          className="flex items-center gap-3 group"
           data-ocid="nav.logo"
         >
-          <span className="w-8 h-8 rounded-sm bg-primary flex items-center justify-center">
-            <BookOpen className="w-4 h-4 text-primary-foreground" />
+          <span className="w-9 h-9 rounded-md bg-primary flex items-center justify-center border border-secondary/20 shadow-sm transition-all duration-300 group-hover:rotate-12">
+            <Compass className="w-5 h-5 text-primary-foreground" />
           </span>
           <div className="flex flex-col leading-tight">
-            <span className="text-xs font-body font-medium text-muted-foreground tracking-widest uppercase">
-              Dr.
+            <span className="text-[10px] font-body font-bold text-accent tracking-[0.2em] uppercase">
+              First Antarctic PhD
             </span>
-            <span className="font-display text-sm font-semibold text-foreground tracking-wide">
-              I.C. Sharma
+            <span className="font-display text-base font-bold text-foreground tracking-wide">
+              Dr. I.C. Sharma
             </span>
           </div>
         </Link>

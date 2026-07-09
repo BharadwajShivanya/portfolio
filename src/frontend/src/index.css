@@ -10,98 +10,99 @@
     --font-mono: monospace;
     --radius: 0.75rem;
 
-    /* Curated Luxury Warm Cream & Dusty Rose Palette */
-    --background: 0.97 0.01 30;
-    --foreground: 0.2 0.02 10;
+    /* Polar Geographic Theme: Deep Navy, Glacier Ice & Scholastic Gold */
+    --background: 0.98 0.015 65; /* Warm Parchment paper for reading ease */
+    --foreground: 0.15 0.04 245; /* Deep Abyssal Navy - high contrast text */
 
-    /* Card background with soft rose-parchment tint */
-    --card: 0.985 0.005 28;
-    --card-foreground: 0.2 0.02 10;
-    --popover: 0.985 0.005 28;
-    --popover-foreground: 0.2 0.02 10;
+    /* Card background with soft polar-parchment tint */
+    --card: 0.99 0.01 65;
+    --card-foreground: 0.15 0.04 245;
+    --popover: 0.99 0.01 65;
+    --popover-foreground: 0.15 0.04 245;
 
-    /* Elegant Warm Dusty Rose Primary */
-    --primary: 0.52 0.16 8;
-    --primary-foreground: 0.97 0.01 30;
+    /* Deep Ocean/Navy Accent */
+    --primary: 0.2 0.06 245;
+    --primary-foreground: 0.98 0.015 65;
 
-    /* Gentle Rose Accent Secondary */
-    --secondary: 0.65 0.12 22;
-    --secondary-foreground: 0.2 0.02 10;
+    /* Ice Blue secondary */
+    --secondary: 0.92 0.04 220;
+    --secondary-foreground: 0.15 0.04 245;
 
-    /* Cream Muted */
-    --muted: 0.92 0.01 30;
-    --muted-foreground: 0.5 0.02 15;
+    /* Muted Glacier Ice */
+    --muted: 0.94 0.02 220;
+    --muted-foreground: 0.35 0.04 245;
 
-    /* Rose Highlight Accent */
-    --accent: 0.52 0.16 8;
-    --accent-foreground: 0.97 0.01 30;
+    /* Scholastic Gold/Bronze Accent */
+    --accent: 0.72 0.11 85;
+    --accent-foreground: 0.15 0.04 245;
 
     --destructive: 0.55 0.22 25;
     --destructive-foreground: 0.98 0 0;
 
-    --border: 0.88 0.02 28;
-    --input: 0.92 0.01 30;
-    --ring: 0.52 0.16 8;
+    --border: 0.85 0.03 220;
+    --input: 0.92 0.02 220;
+    --ring: 0.72 0.11 85;
 
-    --chart-1: 0.52 0.16 8;
-    --chart-2: 0.65 0.12 22;
-    --chart-3: 0.72 0.12 85;
-    --chart-4: 0.58 0.18 30;
-    --chart-5: 0.48 0.16 260;
+    --chart-1: 0.2 0.06 245;
+    --chart-2: 0.72 0.11 85;
+    --chart-3: 0.92 0.04 220;
+    --chart-4: 0.35 0.04 245;
+    --chart-5: 0.55 0.22 25;
 
-    --sidebar: 0.97 0.01 30;
-    --sidebar-foreground: 0.2 0.02 260;
-    --sidebar-primary: 0.52 0.16 8;
-    --sidebar-primary-foreground: 0.97 0.01 30;
-    --sidebar-accent: 0.92 0.01 30;
-    --sidebar-accent-foreground: 0.3 0.01 260;
-    --sidebar-border: 0.88 0.02 28;
-    --sidebar-ring: 0.52 0.16 8;
+    --sidebar: 0.98 0.015 65;
+    --sidebar-foreground: 0.15 0.04 245;
+    --sidebar-primary: 0.2 0.06 245;
+    --sidebar-primary-foreground: 0.98 0.015 65;
+    --sidebar-accent: 0.94 0.02 220;
+    --sidebar-accent-foreground: 0.2 0.06 245;
+    --sidebar-border: 0.85 0.03 220;
+    --sidebar-ring: 0.72 0.11 85;
   }
 
   .dark {
-    /* Rich soft-charcoal warm dark mode background */
-    --background: 0.15 0.01 30;
-    --foreground: 0.93 0.01 28;
-    --card: 0.2 0.015 28;
-    --card-foreground: 0.93 0.01 28;
-    --popover: 0.2 0.015 28;
-    --popover-foreground: 0.93 0.01 28;
+    /* Abyssal Polar Dark Mode */
+    --background: 0.12 0.03 245; /* Polar Night Navy */
+    --foreground: 0.95 0.02 220; /* Glacier Ice off-white */
+    --card: 0.16 0.03 245; /* Dark Ocean Navy */
+    --card-foreground: 0.95 0.02 220;
+    --popover: 0.16 0.03 245;
+    --popover-foreground: 0.95 0.02 220;
 
-    /* Softened warm rose primary for reading comfort */
-    --primary: 0.72 0.12 8;
-    --primary-foreground: 0.15 0.01 30;
+    /* Glacier White/Blue for high dark mode readability */
+    --primary: 0.85 0.04 220;
+    --primary-foreground: 0.12 0.03 245;
 
-    --secondary: 0.75 0.09 22;
-    --secondary-foreground: 0.15 0.01 30;
+    /* Compass Gold for contrast actions */
+    --secondary: 0.72 0.11 85;
+    --secondary-foreground: 0.12 0.03 245;
 
-    --muted: 0.24 0.01 30;
-    --muted-foreground: 0.65 0.015 28;
+    --muted: 0.2 0.03 245;
+    --muted-foreground: 0.7 0.03 220;
 
-    --accent: 0.72 0.12 8;
-    --accent-foreground: 0.15 0.01 30;
+    --accent: 0.72 0.11 85;
+    --accent-foreground: 0.12 0.03 245;
 
     --destructive: 0.65 0.19 22;
     --destructive-foreground: 0.15 0.01 10;
 
-    --border: 0.26 0.015 28;
-    --input: 0.26 0.015 28;
-    --ring: 0.72 0.12 8;
+    --border: 0.22 0.03 245;
+    --input: 0.22 0.03 245;
+    --ring: 0.72 0.11 85;
 
-    --chart-1: 0.72 0.12 8;
-    --chart-2: 0.68 0.14 200;
-    --chart-3: 0.75 0.15 85;
-    --chart-4: 0.68 0.16 30;
-    --chart-5: 0.65 0.18 260;
+    --chart-1: 0.85 0.04 220;
+    --chart-2: 0.72 0.11 85;
+    --chart-3: 0.2 0.03 245;
+    --chart-4: 0.7 0.03 220;
+    --chart-5: 0.65 0.19 22;
 
-    --sidebar: 0.15 0.01 30;
-    --sidebar-foreground: 0.93 0.01 28;
-    --sidebar-primary: 0.72 0.12 8;
-    --sidebar-primary-foreground: 0.15 0.01 30;
-    --sidebar-accent: 0.24 0.01 30;
-    --sidebar-accent-foreground: 0.85 0.01 50;
-    --sidebar-border: 0.26 0.015 28;
-    --sidebar-ring: 0.72 0.12 8;
+    --sidebar: 0.12 0.03 245;
+    --sidebar-foreground: 0.95 0.02 220;
+    --sidebar-primary: 0.85 0.04 220;
+    --sidebar-primary-foreground: 0.12 0.03 245;
+    --sidebar-accent: 0.2 0.03 245;
+    --sidebar-accent-foreground: 0.95 0.02 220;
+    --sidebar-border: 0.22 0.03 245;
+    --sidebar-ring: 0.72 0.11 85;
   }
 
   * {
@@ -126,12 +127,12 @@
   }
 
   .letter-shadow {
-    box-shadow: 0 4px 24px oklch(0.48 0.14 8 / 0.12), 0 1px 4px
-      oklch(0.48 0.14 8 / 0.08);
+    box-shadow: 0 4px 24px oklch(0.2 0.06 245 / 0.08), 0 1px 4px
+      oklch(0.2 0.06 245 / 0.05);
   }
 
   .rose-glow {
-    box-shadow: 0 0 0 3px oklch(0.48 0.14 8 / 0.15);
+    box-shadow: 0 0 0 3px oklch(0.72 0.11 85 / 0.25); /* Gold ring glow */
   }
 
   @keyframes fadeIn {
@@ -157,12 +158,12 @@
   .parchment-texture {
     background-image: radial-gradient(
         circle at 20% 30%,
-        oklch(0.72 0.08 18 / 0.08) 0%,
+        oklch(0.92 0.04 220 / 0.06) 0%,
         transparent 60%
       ),
       radial-gradient(
         circle at 80% 70%,
-        oklch(0.78 0.06 24 / 0.06) 0%,
+        oklch(0.72 0.11 85 / 0.04) 0%,
         transparent 60%
       );
   }

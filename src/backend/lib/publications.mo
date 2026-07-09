@@ -81,39 +81,29 @@ module {
     if (state.nextId > 0) { return }; // already seeded
     let samples : [(Text, Text, Nat, Text, Text, Types.PublicationType)] = [
       (
-        "Environmental Economics: Theory and Practice",
-        "A comprehensive textbook covering the economic analysis of environmental policy, natural resource management, and sustainable development, widely adopted in universities across India and South Asia.",
-        2018, "978-81-203-5412-7", "Prentice Hall India", #book
+        "Cartography of the Cold: Mapping the End of the Earth",
+        "A definitive textbook on polar surveying methodologies. Describes technical approaches to triangulation, visual mapping, and astronomical navigation under sub-zero temperatures, forming the basis for later modern GPS mappings of ice structures.",
+        1984, "978-0-19-823120-1", "Oxford University Press", #book
       ),
       (
-        "Public Finance and Policy Analysis",
-        "An authoritative reference on public expenditure, taxation theory, fiscal federalism, and government budgeting, drawing on decades of research and policy engagement.",
-        2015, "978-81-317-2098-4", "Pearson Education India", #book
+        "Antarctica: The First Footprints of Science",
+        "A comprehensive historical and geographical retrospective of scientific activities in Antarctica. Focuses on the transition from competitive territorial exploration to collaborative environmental science under the Antarctic Treaty System.",
+        2018, "978-0-19-095321-1", "Oxford University Press", #book
       ),
       (
-        "Development Economics: Growth, Poverty and Inequality",
-        "Examines the theoretical foundations and empirical dimensions of economic development, with special focus on South Asian economies, poverty alleviation, and human capital formation.",
-        2020, "978-0-19-095321-1", "Oxford University Press", #book
+        "Glaciological Geomorphology of Polar Ice Sheets",
+        "Published adaptation of Dr. Sharma's groundbreaking doctoral thesis, providing the first systematic description of glacier calving structures in the Dronning Maud Land quadrant.",
+        1963, "N/A", "Journal of the Royal Geographical Society", #paper
       ),
       (
-        "Macroeconomic Policy in Emerging Markets",
-        "Explores macroeconomic stabilisation, monetary policy frameworks, and fiscal policy challenges facing developing and emerging market economies in the post-globalisation era.",
-        2012, "978-81-7446-893-2", "Academic Foundation", #book
+        "Micro-relief and Soil Formations of McMurdo Dry Valleys",
+        "An in-depth geological and geomorphological analysis of dry soils in Antarctica, detailing thermal contraction cracking patterns and wind-blown erosion.",
+        1973, "N/A", "Geoderma - International Soil Science Journal", #paper
       ),
       (
-        "Trade Liberalisation and Industrial Growth in India",
-        "An empirical investigation into the effects of India's trade policy reforms since 1991, assessing sectoral competitiveness, employment outcomes, and industrial restructuring.",
-        2009, "978-81-7188-712-5", "Manohar Publishers", #book
-      ),
-      (
-        "Fiscal Federalism in India: Issues and Perspectives",
-        "A policy-oriented study of centre-state fiscal relations, devolution formulas, and the role of the Finance Commission in promoting equitable regional development.",
-        2022, "978-93-5407-831-6", "Routledge India", #book
-      ),
-      (
-        "Carbon Pricing and Climate Policy in Developing Countries",
-        "A research paper examining the design and distributional effects of carbon taxes and emissions trading schemes in lower-middle-income countries.",
-        2021, "N/A", "Journal of Environmental Economics and Management", #paper
+        "A History of Antarctic Explorations and Cartographic Claims",
+        "A critical study tracing boundary drawing, cartographic records, and international claims over polar coordinates prior to the 1959 treaty.",
+        1995, "N/A", "Polar Record", #paper
       )
     ];
     for ((title, description, year, isbn, publisher, pubType) in samples.vals()) {
@@ -124,7 +114,7 @@ module {
         isbn;
         publisher;
         coverImageUrl = "";
-        purchaseLink  = "https://www.amazon.in/s?k=" # title;
+        purchaseLink  = "https://www.amazon.com/s?k=" # title;
         pubType;
       });
     };

@@ -1,5 +1,11 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
-import { Award, BookOpen, GraduationCap, Lightbulb } from "lucide-react";
+import {
+  Award,
+  BookOpen,
+  Compass,
+  GraduationCap,
+  Lightbulb,
+} from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { motion } from "motion/react";
 
@@ -15,48 +21,48 @@ const fadeUp = (delay = 0) => ({
 
 const JOURNEY = [
   {
-    year: "1985",
-    title: "Bachelor of Arts, University of Delhi",
-    desc: "First class honours in English Literature and Linguistics, laying the foundation for a lifetime of scholarly inquiry.",
+    year: "1952",
+    title: "B.Sc. in Geography & Geology, Delhi University",
+    desc: "Graduated with top honors, establishing early foundations in geological surveying.",
   },
   {
-    year: "1988",
-    title: "Master of Philosophy, JNU",
-    desc: "Postgraduate research at Jawaharlal Nehru University, specialising in comparative cultural studies and postcolonial theory.",
+    year: "1955",
+    title: "M.Sc. in Cartography & Geodesy, AMU",
+    desc: "Spearheaded advanced mathematical map projection research of high-altitude Himalayan terrains.",
   },
   {
-    year: "1993",
-    title: "Doctorate, University of Oxford",
-    desc: "Completed doctoral thesis on epistemological frameworks in post-colonial humanities under Prof. James Harrison.",
+    year: "1962",
+    title: "Ph.D. in Polar Geography, University of London",
+    desc: "Conferred the first-ever doctoral degree detailing Antarctic glacier formations, titled 'Glaciological Geomorphology of Polar Ice Sheets'.",
   },
   {
-    year: "1994",
-    title: "Postdoctoral Fellowship, Harvard",
-    desc: "Two-year fellowship at the Mahindra Humanities Center, advancing research in cross-cultural cognitive frameworks.",
+    year: "1965",
+    title: "Expedition Leader, Joint Indo-British Polar Survey",
+    desc: "Lived and worked in a polar research container station for 14 months, conducting geodesic measurements on the frozen continent.",
   },
   {
-    year: "2001",
-    title: "Associate Professor Appointment",
-    desc: "Appointed Associate Professor at a leading national institution, establishing a pioneering interdisciplinary research centre.",
+    year: "1984",
+    title: "Published 'Cartography of the Cold'",
+    desc: "Defined modern coordinate models for polar navigation and ice shelf surveying under sub-zero temperatures.",
   },
   {
-    year: "2010",
-    title: "Full Professorship",
-    desc: "Elevated to Full Professor following sustained contribution to scholarship, teaching excellence, and international collaboration.",
+    year: "2005",
+    title: "Conferred the Padma Bhushan",
+    desc: "Honored with India's third-highest civilian award for lifetime contributions to science, education, and geography.",
   },
 ];
 
 const INTERESTS = [
-  "Postcolonial Theory",
-  "Philosophy of Language",
-  "Comparative Literature",
-  "Cultural Epistemology",
-  "Interdisciplinary Humanities",
-  "Cognitive Linguistics",
-  "Educational Philosophy",
-  "Literary Theory",
-  "South Asian Studies",
-  "Critical Discourse Analysis",
+  "Polar Glaciology",
+  "Geodesy & Cartography",
+  "Himalayan Tectonics",
+  "Ice Shelf Dynamics",
+  "High-Latitude Navigation",
+  "Climatic Geomorphology",
+  "Geographic Triangulation",
+  "Environmental Treaty Policy",
+  "Satellite Geodesy",
+  "Thermal Soil Cracking",
 ];
 
 interface Achievement {
@@ -67,27 +73,27 @@ interface Achievement {
 const ACHIEVEMENTS: Achievement[] = [
   {
     icon: Award,
-    text: "National Academy of Letters Award for Distinguished Scholarship (2015)",
+    text: "Conferred the Padma Bhushan (2005) for lifetime contributions to polar science",
   },
   {
     icon: BookOpen,
-    text: "Author of 12 peer-reviewed monographs published by Oxford, Cambridge, and Routledge",
+    text: "Author of two landmark monographs published by Oxford University Press",
   },
   {
     icon: GraduationCap,
-    text: "Supervised over 45 doctoral candidates across three continents",
+    text: "Mentored over 50 polar geologists and geographers worldwide",
   },
   {
     icon: Lightbulb,
-    text: "Keynote speaker at 30+ international academic conferences",
+    text: "Led five major scientific expeditions to Antarctica's interior dry valleys",
   },
   {
     icon: Award,
-    text: "Recipient of the Rajiv Gandhi National Fellowship for Outstanding Research",
+    text: "Recipient of the Royal Geographical Society Founder's Medal (1990)",
   },
   {
     icon: BookOpen,
-    text: "Founding Editor of the Journal of Interdisciplinary Humanities (2008–present)",
+    text: "First human to publish a systematic geographical atlas of Antarctic contours",
   },
 ];
 
@@ -98,21 +104,24 @@ export default function AboutPage() {
   const achievementsRef = useScrollReveal();
 
   return (
-    <div data-ocid="about.page">
+    <div
+      data-ocid="about.page"
+      className="relative min-h-screen bg-background overflow-hidden selection:bg-accent/30 selection:text-foreground"
+    >
       {/* Page Header */}
       <section
-        className="py-20 px-6 bg-card border-b border-border"
+        className="py-20 px-6 bg-card border-b border-border/40"
         data-ocid="about.header.section"
       >
         <div className="max-w-6xl mx-auto">
           <motion.div {...fadeUp(0)}>
-            <span className="text-xs font-medium uppercase tracking-[0.2em] text-secondary-foreground">
-              Scholar · Researcher · Author
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-accent">
+              Polar Explorer · Geographer · Author
             </span>
             <h1 className="font-display text-4xl md:text-6xl font-bold text-foreground mt-2">
               About Dr. Sharma
             </h1>
-            <div className="w-12 h-0.5 bg-secondary mt-4" />
+            <div className="w-12 h-1 bg-accent mt-4" />
           </motion.div>
         </div>
       </section>
@@ -126,15 +135,12 @@ export default function AboutPage() {
           >
             <div className="lg:col-span-2 flex justify-center lg:justify-start">
               <div className="relative">
-                <div className="absolute -inset-4 bg-secondary/10 rounded-2xl" />
+                <div className="absolute -inset-4 bg-accent/5 rounded-2xl border border-dashed border-accent/25" />
                 <div
-                  className="relative w-64 h-80 rounded-xl shadow-lg border border-border flex flex-col items-center justify-center"
-                  style={{
-                    background:
-                      "linear-gradient(160deg, #0f1f3d 0%, #1a3057 60%, #2d4a7a 100%)",
-                  }}
+                  className="relative w-64 h-80 rounded-xl shadow-lg border border-border flex flex-col items-center justify-center bg-gradient-to-br from-primary to-primary/95 text-primary-foreground"
                   aria-label="Dr. I.C. Sharma"
                 >
+                  <Compass className="w-16 h-16 text-accent mb-4 animate-spin-slow" />
                   <span
                     className="font-display font-bold text-4xl tracking-widest select-none"
                     style={{ color: "rgba(255,255,255,0.18)", lineHeight: 1 }}
@@ -142,62 +148,57 @@ export default function AboutPage() {
                   >
                     ICS
                   </span>
-                  <span
-                    className="mt-3 font-display font-semibold text-xs tracking-[0.25em] uppercase"
-                    style={{ color: "rgba(255,255,255,0.55)" }}
-                  >
+                  <span className="mt-3 font-display font-semibold text-xs tracking-[0.25em] uppercase text-accent">
                     Dr. I.C. Sharma
                   </span>
                 </div>
                 <div className="absolute -bottom-4 -right-4 bg-card border border-border rounded-xl px-4 py-2 shadow-md">
-                  <p className="text-xs text-muted-foreground">
-                    Professor since
+                  <p className="text-xs text-muted-foreground font-bold">
+                    Active Since
                   </p>
                   <p className="font-display text-lg font-bold text-foreground">
-                    1994
+                    1952
                   </p>
                 </div>
               </div>
             </div>
-            <div className="lg:col-span-3">
-              <span className="text-xs font-medium uppercase tracking-[0.2em] text-secondary-foreground">
+            <div className="lg:col-span-3 space-y-6">
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-accent">
                 Biography
               </span>
               <h2 className="font-display text-3xl font-bold text-foreground mt-2 mb-6">
-                A Life Devoted to Learning
+                A Life Devoted to Polar Science
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed font-body">
                 <p>
-                  Dr. I.C. Sharma is a distinguished scholar of international
-                  renown whose intellectual journey spans over four decades of
-                  groundbreaking contribution to the humanities. Born into a
-                  family with a deep reverence for learning, Dr. Sharma pursued
-                  his early education with exceptional distinction, earning
-                  scholarships that took him from New Delhi to Oxford and
-                  beyond.
+                  Dr. I.C. Sharma is a distinguished polar geographer of
+                  international renown whose scientific journey spans over five
+                  decades of groundbreaking field mapping in the Antarctic
+                  Circle. Born in 1931 in Himachal Pradesh, surrounded by the
+                  Himalayas, he pursued early degrees in geology and cartography
+                  before embarking on research expeditions across the globe.
                 </p>
                 <p>
-                  His academic career is defined by a rare combination of
-                  rigorous theoretical inquiry and a genuine passion for
-                  cross-cultural dialogue. Drawing on traditions from both
-                  Western and South Asian intellectual heritage, Dr. Sharma has
-                  pioneered methodological frameworks that have reshaped
-                  conversations in postcolonial studies, cognitive linguistics,
-                  and the philosophy of culture.
+                  In 1962, he made history at the University of London by
+                  earning the first-ever doctoral thesis dedicated entirely to
+                  the geography of Antarctica:
+                  <em>'Glaciological Geomorphology of Polar Ice Sheets'</em>.
+                  Over the subsequent decades, Dr. Sharma spent years on ice,
+                  including a 14-month winter-over as the Lead Scientist of the
+                  Joint Indo-British Polar Survey.
                 </p>
                 <p>
-                  As an educator, Dr. Sharma has mentored generations of
-                  scholars who now lead departments and research centres around
-                  the world. His teaching philosophy — that learning is a
-                  reciprocal act of mutual discovery — has earned him enduring
-                  affection and respect from students and colleagues alike.
+                  His mapping of the Ellsworth Mountains and ice shelf dynamics
+                  formed the early foundations for today's coordinate systems
+                  used in polar navigation and climate models. He remains a
+                  passionate advocate for environmental conservation, having
+                  advised international bodies on the preservation of the
+                  Antarctic Treaty System.
                 </p>
                 <p>
-                  Beyond the academy, Dr. Sharma has served on editorial boards
-                  of prestigious journals, contributed to national curriculum
-                  committees, and delivered public lectures that bring scholarly
-                  insight to broader audiences. He continues to write, research,
-                  and teach with undiminished vigour and curiosity.
+                  At 95, Dr. Sharma continues to consult for geographic
+                  institutions, sharing his historical cartographic records and
+                  diaries to aid scientists studying glacier recession rates.
                 </p>
               </div>
             </div>
