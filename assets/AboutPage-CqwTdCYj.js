@@ -1,6 +1,6 @@
-import { c as createLucideIcon, j as jsxRuntimeExports, m as motion, C as Compass } from "./index-CIw_hSTm.js";
-import { u as useScrollReveal } from "./useScrollReveal-CtE2Dph3.js";
-import { B as BookOpen } from "./book-open-60M1Jkpz.js";
+import { c as createLucideIcon, j as jsxRuntimeExports, m as motion, C as Compass } from "./index-BuHyn914.js";
+import { u as useScrollReveal } from "./useScrollReveal-D8TCeS0e.js";
+import { B as BookOpen } from "./book-open-DbHIiC_L.js";
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -65,72 +65,72 @@ const fadeUp = (delay = 0) => ({
 });
 const JOURNEY = [
   {
-    year: "1952",
-    title: "B.Sc. in Geography & Geology, Delhi University",
-    desc: "Graduated with top honors, establishing early foundations in geological surveying."
+    year: "1960",
+    title: "Master's Degree in Geography, Aligarh Muslim University",
+    desc: "Completed postgraduate studies in Geography at AMU, establishing strong foundations in geomorphology."
   },
   {
-    year: "1955",
-    title: "M.Sc. in Cartography & Geodesy, AMU",
-    desc: "Spearheaded advanced mathematical map projection research of high-altitude Himalayan terrains."
-  },
-  {
-    year: "1962",
-    title: "Ph.D. in Polar Geography, University of London",
-    desc: "Conferred the first-ever doctoral degree detailing Antarctic glacier formations, titled 'Glaciological Geomorphology of Polar Ice Sheets'."
-  },
-  {
-    year: "1965",
-    title: "Expedition Leader, Joint Indo-British Polar Survey",
-    desc: "Lived and worked in a polar research container station for 14 months, conducting geodesic measurements on the frozen continent."
+    year: "1983",
+    title: "Published 'SOCIAL FORESTRY IN THE PIN-DAR VALLEY'",
+    desc: "A well-researched study published in the Indian Journal of Forestry, drawing international attention to environmental and forestry dynamics."
   },
   {
     year: "1984",
-    title: "Published 'Cartography of the Cold'",
-    desc: "Defined modern coordinate models for polar navigation and ice shelf surveying under sub-zero temperatures."
+    title: "Pre-Antarctic Acclimatisation Training, HAWS Gulmarg",
+    desc: "Underwent rigorous acclimatisation training at Sonemarg and Machhoi glacier under the High Altitude Warfare School."
   },
   {
-    year: "2005",
-    title: "Conferred the Padma Bhushan",
-    desc: "Honored with India's third-highest civilian award for lifetime contributions to science, education, and geography."
+    year: "1992",
+    title: "Published 'Antarctica: Geopolitics and Resources'",
+    desc: "Authored perhaps the first comprehensive book on Antarctica written by an Indian geographer, detailing geopolitical and resource dynamics."
+  },
+  {
+    year: "Recent",
+    title: "Conferred Doctoral Degree",
+    desc: "Awarded a PhD for advanced contributions to the field of geography and Antarctic studies."
+  },
+  {
+    year: "Career",
+    title: "31+ Years of Academic Leadership",
+    desc: "Served as a lecturer at N.A.S. College, Meerut, and Head of the Faculty of Geography, Military School, Belgaum."
   }
 ];
 const INTERESTS = [
-  "Polar Glaciology",
-  "Geodesy & Cartography",
-  "Himalayan Tectonics",
-  "Ice Shelf Dynamics",
-  "High-Latitude Navigation",
-  "Climatic Geomorphology",
-  "Geographic Triangulation",
-  "Environmental Treaty Policy",
-  "Satellite Geodesy",
-  "Thermal Soil Cracking"
+  "Antarctic Studies",
+  "Geopolitics & Resource Management",
+  "Social Forestry",
+  "Acclimatisation & Altitude Training",
+  "Military Geography",
+  "Physical Geography",
+  "Geomorphology",
+  "Himalayan Ecosystems",
+  "Polar Research Policy",
+  "Cartographic Surveying"
 ];
 const ACHIEVEMENTS = [
   {
     icon: Award,
-    text: "Conferred the Padma Bhushan (2005) for lifetime contributions to polar science"
+    text: "Uttarakhand Recipient — honored for outstanding academic and state contributions"
   },
   {
     icon: BookOpen,
-    text: "Author of two landmark monographs published by Oxford University Press"
+    text: "Author of 'Antarctica: Geopolitics and Resources' (1992) — perhaps the first book on Antarctica by an Indian geographer"
   },
   {
     icon: GraduationCap,
-    text: "Mentored over 50 polar geologists and geographers worldwide"
+    text: "Presently Head of the Geography Department at Army Cadet College Wing of the Indian Military Academy, Dehradun"
   },
   {
     icon: Lightbulb,
-    text: "Led five major scientific expeditions to Antarctica's interior dry valleys"
+    text: "Completed Pre-Antarctic Acclimatisation training at Sonemarg and Machhoi glacier under HAWS, Gulmarg"
   },
   {
     icon: Award,
-    text: "Recipient of the Royal Geographical Society Founder's Medal (1990)"
+    text: "Life Member of the Indian Science Congress and the Indian Council of Geographers"
   },
   {
     icon: BookOpen,
-    text: "First human to publish a systematic geographical atlas of Antarctic contours"
+    text: "Authored the widely acclaimed study 'SOCIAL FORESTRY IN THE PIN-DAR VALLEY' in 1983"
   }
 ];
 function AboutPage() {
@@ -186,21 +186,27 @@ function AboutPage() {
                 ),
                 /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "absolute -bottom-4 -right-4 bg-card border border-border rounded-xl px-4 py-2 shadow-md", children: [
                   /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground font-bold", children: "Active Since" }),
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-display text-lg font-bold text-foreground", children: "1952" })
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-display text-lg font-bold text-foreground", children: "1960" })
                 ] })
               ] }) }),
               /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lg:col-span-3 space-y-6", children: [
                 /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs font-bold uppercase tracking-[0.2em] text-accent", children: "Biography" }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display text-3xl font-bold text-foreground mt-2 mb-6", children: "A Life Devoted to Polar Science" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display text-3xl font-bold text-foreground mt-2 mb-6", children: "A Life Devoted to Antarctic Studies & Geography" }),
                 /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-4 text-muted-foreground leading-relaxed font-body", children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "Dr. I.C. Sharma is a distinguished polar geographer of international renown whose scientific journey spans over five decades of groundbreaking field mapping in the Antarctic Circle. Born in 1931 in Himachal Pradesh, surrounded by the Himalayas, he pursued early degrees in geology and cartography before embarking on research expeditions across the globe." }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "Dr. I.C. Sharma is an experienced and distinguished scholar in the field of Antarctic Studies and Geography. He obtained his Master's Degree in Geography from Aligarh Muslim University in 1960, marking the beginning of a lifetime of academic contribution, and was recently awarded his Doctoral degree for his advanced research." }),
                   /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { children: [
-                    "In 1962, he made history at the University of London by earning the first-ever doctoral thesis dedicated entirely to the geography of Antarctica:",
-                    /* @__PURE__ */ jsxRuntimeExports.jsx("em", { children: "'Glaciological Geomorphology of Polar Ice Sheets'" }),
-                    ". Over the subsequent decades, Dr. Sharma spent years on ice, including a 14-month winter-over as the Lead Scientist of the Joint Indo-British Polar Survey."
+                    "In 1984, Dr. Sharma underwent the intensive Pre-Antarctic Acclimatisation Course at the Sonemarg and Machhoi glacier under the High Altitude Warfare School (HAWS) in Gulmarg, preparing him for the rigorous conditions of polar field studies. His research interests also extend to environmental ecology, highlighted by his well-researched 1983 study, ",
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("em", { children: "'SOCIAL FORESTRY IN THE PIN-DAR VALLEY'" }),
+                    ", published in the prestigious ",
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("em", { children: "Indian Journal of Forestry" }),
+                    "."
                   ] }),
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "His mapping of the Ellsworth Mountains and ice shelf dynamics formed the early foundations for today's coordinate systems used in polar navigation and climate models. He remains a passionate advocate for environmental conservation, having advised international bodies on the preservation of the Antarctic Treaty System." }),
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "At 95, Dr. Sharma continues to consult for geographic institutions, sharing his historical cartographic records and diaries to aid scientists studying glacier recession rates." })
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "Dr. Sharma's academic career spans over 31 years of teaching excellence, having served as a lecturer at N.A.S. College, Meerut, and Head of the Faculty of Geography at the Military School, Belgaum. He is presently the Head of the Geography Department at the Army Cadet College (ACC) Wing of the Indian Military Academy (IMA), Dehradun, which is affiliated to Jawaharlal Nehru University." }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { children: [
+                    "A life member of both the Indian Science Congress and the Indian Council of Geographers, Dr. Sharma made a landmark contribution in 1992 with his book ",
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("em", { children: "'Antarctica: Geopolitics and Resources'" }),
+                    ", which stands as perhaps the first book written by an Indian geographer on the frozen continent. For his dedicated contributions, he is recognized as an honored Uttarakhand recipient."
+                  ] })
                 ] })
               ] })
             ]

@@ -1,7 +1,7 @@
-import { c as createLucideIcon, j as jsxRuntimeExports, m as motion, L as Link, M as Mail, C as Compass, E as ExternalLink } from "./index-CIw_hSTm.js";
-import { u as usePublications } from "./useBackend-BJQQYzw9.js";
-import { u as useScrollReveal } from "./useScrollReveal-CtE2Dph3.js";
-import { B as BookOpen } from "./book-open-60M1Jkpz.js";
+import { c as createLucideIcon, j as jsxRuntimeExports, m as motion, L as Link, M as Mail, C as Compass, E as ExternalLink } from "./index-BuHyn914.js";
+import { u as usePublications } from "./useBackend-DajLxioc.js";
+import { u as useScrollReveal } from "./useScrollReveal-D8TCeS0e.js";
+import { B as BookOpen } from "./book-open-DbHIiC_L.js";
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -124,7 +124,7 @@ function HomePage() {
                     {
                       ...fadeUp(0.2),
                       className: "font-display text-xl md:text-2xl italic text-accent font-medium",
-                      children: "First Human to Complete a Ph.D. on Antarctica"
+                      children: "Pioneering Scholar of Antarctic Studies & Geographer"
                     }
                   )
                 ] }),
@@ -133,7 +133,7 @@ function HomePage() {
                   {
                     ...fadeUp(0.3),
                     className: "text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed font-body",
-                    children: "A legendary glaciologist, cartographer, and explorer who dedicated six decades to deciphering the maps, geography, and deep climate memory locked within the polar ice caps."
+                    children: "An experienced geographer and scholar with over 31 years of teaching tenure across N.A.S. College and Military School Belgaum, presently leading the Geography Department at Army Cadet College, Indian Military Academy, Dehradun."
                   }
                 ),
                 /* @__PURE__ */ jsxRuntimeExports.jsxs(motion.div, { ...fadeUp(0.4), className: "flex flex-wrap gap-4 pt-2", children: [
@@ -187,10 +187,10 @@ function HomePage() {
           }
         ),
         /* @__PURE__ */ jsxRuntimeExports.jsx("section", { className: "py-12 bg-card/50 backdrop-blur-sm border-b border-border/40 relative z-10", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8", children: [
-          { metric: "1st", label: "Polar Geography PhD" },
-          { metric: "14 Mo", label: "Antarctic Winter-Over" },
-          { metric: "12", label: "Major Polar Surveys" },
-          { metric: "95 Yrs", label: "Lifetime of Learning" }
+          { metric: "1992", label: "Pioneering Antarctic Book" },
+          { metric: "31+ Yrs", label: "Teaching Experience" },
+          { metric: "HAWS", label: "Acclimatisation Training" },
+          { metric: "State", label: "Uttarakhand Recipient" }
         ].map((stat, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
           motion.div,
           {
@@ -291,12 +291,12 @@ function HomePage() {
                 className: "scroll-reveal grid grid-cols-1 lg:grid-cols-2 gap-16 items-center",
                 children: [
                   /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-6", children: [
-                    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs font-bold uppercase tracking-[0.25em] text-accent", children: "Explorer Profile" }),
-                    /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display text-3xl md:text-5xl font-bold text-foreground leading-tight", children: "Mapping the Frozen Wilderness" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs font-bold uppercase tracking-[0.25em] text-accent", children: "Scholar Profile" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display text-3xl md:text-5xl font-bold text-foreground leading-tight", children: "Decades of Scholarly Contribution" }),
                     /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-12 h-1 bg-accent" }),
                     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-4 text-muted-foreground leading-relaxed font-body text-base md:text-lg", children: [
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "At a time when Antarctic travel was reserved for military scouts and major superpowers, Dr. Sharma set sail from India to join coordinates mapping efforts at the bottom of the world." }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "His mapping of the Ellsworth range and glacier movements clarified how the continent's ice loads relate to sea-level variables. Now at 95, his focus is ensuring early mapping records are preserved for research institutions worldwide." })
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "With over three decades of dedicated teaching experience across prestigious institutions, Dr. Sharma has shaped generations of scholars in geography and physical sciences." }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "His expertise in Antarctic studies was forged through high-altitude acclimatisation training at Sonemarg and Machhoi glacier under HAWS, Gulmarg, culminating in his pioneering 1992 book on the frozen continent's geopolitics and resources." })
                     ] }),
                     /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "pt-4", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
                       Link,
@@ -321,11 +321,11 @@ function HomePage() {
                         children: [
                           /* @__PURE__ */ jsxRuntimeExports.jsx(Compass, { className: "w-16 h-16 text-accent opacity-90 animate-spin-slow" }),
                           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-2", children: [
-                            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-display text-7xl font-black block text-accent tracking-tighter", children: "1962" }),
-                            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs font-bold tracking-[0.3em] uppercase opacity-75", children: "First Antarctic PhD Conferred" })
+                            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-display text-7xl font-black block text-accent tracking-tighter", children: "1992" }),
+                            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs font-bold tracking-[0.3em] uppercase opacity-75", children: "Pioneering Book on Antarctica" })
                           ] }),
                           /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-full h-px bg-white/10" }),
-                          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs italic max-w-xs opacity-80 font-body", children: '"Glaciological Geomorphology of Polar Ice Sheets" — Royal Geographical Society Archives.' })
+                          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs italic max-w-xs opacity-80 font-body", children: '"Antarctica: Geopolitics and Resources" — Perhaps the first book written by an Indian Geographer.' })
                         ]
                       }
                     )
@@ -358,7 +358,7 @@ function HomePage() {
                     ),
                     /* @__PURE__ */ jsxRuntimeExports.jsx("blockquote", { className: "font-display text-2xl md:text-4xl italic font-semibold leading-relaxed px-4 md:px-12", children: "To measure the glacier is to measure the silent heart of the Earth. If we lose the memory of the ice, we lose the map of our future." }),
                     /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-16 h-0.5 bg-accent mx-auto" }),
-                    /* @__PURE__ */ jsxRuntimeExports.jsx("footer", { className: "text-xs md:text-sm font-bold uppercase tracking-[0.25em] text-accent", children: "— Dr. I.C. Sharma (Polar Keynote Address, 1990)" })
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("footer", { className: "text-xs md:text-sm font-bold uppercase tracking-[0.25em] text-accent", children: "— Dr. I.C. Sharma" })
                   ]
                 }
               ) })

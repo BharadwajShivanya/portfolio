@@ -1,4 +1,4 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/HomePage-DxQXgp9R.js","assets/useBackend-BJQQYzw9.js","assets/useScrollReveal-CtE2Dph3.js","assets/book-open-60M1Jkpz.js","assets/AboutPage-B9BvMBnf.js","assets/TimelinePage-BSBuXmmQ.js","assets/skeleton-Bsk0OBcI.js","assets/GalleryPage-ThersKdR.js","assets/image-BDRIkHAm.js","assets/ContactPage-DxWLDP-J.js","assets/AdminPage-CP5qTBMK.js"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/HomePage-BX8jLifG.js","assets/useBackend-DajLxioc.js","assets/useScrollReveal-D8TCeS0e.js","assets/book-open-DbHIiC_L.js","assets/AboutPage-CqwTdCYj.js","assets/TimelinePage-B0E8PaTn.js","assets/skeleton-Cqz9usGx.js","assets/GalleryPage-JpfPHoxd.js","assets/image-DZOerayR.js","assets/ContactPage-BYnHxkzk.js","assets/AdminPage-DQGLt3MB.js"])))=>i.map(i=>d[i]);
 var __defProp = Object.defineProperty;
 var __typeError = (msg) => {
   throw TypeError(msg);
@@ -37376,7 +37376,7 @@ function Navbar() {
               children: [
                 /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "w-9 h-9 rounded-md bg-primary flex items-center justify-center border border-secondary/20 shadow-sm transition-all duration-300 group-hover:rotate-12", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Compass, { className: "w-5 h-5 text-primary-foreground" }) }),
                 /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col leading-tight", children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-[10px] font-body font-bold text-accent tracking-[0.2em] uppercase", children: "First Antarctic PhD" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-[10px] font-body font-bold text-accent tracking-[0.2em] uppercase", children: "Antarctic Studies Scholar" }),
                   /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-display text-base font-bold text-foreground tracking-wide", children: "Dr. I.C. Sharma" })
                 ] })
               ]
@@ -37461,7 +37461,7 @@ function Preloader({ onComplete }) {
     } else if (progress2 < 50) {
       setCurrentWord("CARTOGRAPHY");
     } else if (progress2 < 75) {
-      setCurrentWord("ANTARCTICA 1962");
+      setCurrentWord("ANTARCTICA 1992");
     } else {
       setCurrentWord("DR. I.C. SHARMA");
     }
@@ -37574,12 +37574,12 @@ function Layout() {
     /* @__PURE__ */ jsxRuntimeExports.jsx(Toaster, { position: "top-right", richColors: true })
   ] });
 }
-const HomePage = reactExports.lazy(() => __vitePreload(() => import("./HomePage-DxQXgp9R.js"), true ? __vite__mapDeps([0,1,2,3]) : void 0));
-const AboutPage = reactExports.lazy(() => __vitePreload(() => import("./AboutPage-B9BvMBnf.js"), true ? __vite__mapDeps([4,2,3]) : void 0));
-const TimelinePage = reactExports.lazy(() => __vitePreload(() => import("./TimelinePage-BSBuXmmQ.js"), true ? __vite__mapDeps([5,6,1,3]) : void 0));
-const GalleryPage = reactExports.lazy(() => __vitePreload(() => import("./GalleryPage-ThersKdR.js"), true ? __vite__mapDeps([7,6,1,8]) : void 0));
-const ContactPage = reactExports.lazy(() => __vitePreload(() => import("./ContactPage-DxWLDP-J.js"), true ? __vite__mapDeps([9,1]) : void 0));
-const AdminPage = reactExports.lazy(() => __vitePreload(() => import("./AdminPage-CP5qTBMK.js"), true ? __vite__mapDeps([10,8]) : void 0));
+const HomePage = reactExports.lazy(() => __vitePreload(() => import("./HomePage-BX8jLifG.js"), true ? __vite__mapDeps([0,1,2,3]) : void 0));
+const AboutPage = reactExports.lazy(() => __vitePreload(() => import("./AboutPage-CqwTdCYj.js"), true ? __vite__mapDeps([4,2,3]) : void 0));
+const TimelinePage = reactExports.lazy(() => __vitePreload(() => import("./TimelinePage-B0E8PaTn.js"), true ? __vite__mapDeps([5,6,1,3]) : void 0));
+const GalleryPage = reactExports.lazy(() => __vitePreload(() => import("./GalleryPage-JpfPHoxd.js"), true ? __vite__mapDeps([7,6,1,8]) : void 0));
+const ContactPage = reactExports.lazy(() => __vitePreload(() => import("./ContactPage-BYnHxkzk.js"), true ? __vite__mapDeps([9,1]) : void 0));
+const AdminPage = reactExports.lazy(() => __vitePreload(() => import("./AdminPage-DQGLt3MB.js"), true ? __vite__mapDeps([10,8]) : void 0));
 function PageFallback() {
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center justify-center min-h-[40vh]", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-8 h-8 rounded-full border-2 border-primary border-t-transparent animate-spin" }) });
 }

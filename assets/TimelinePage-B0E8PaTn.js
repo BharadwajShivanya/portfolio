@@ -1,7 +1,7 @@
-import { c as createLucideIcon, r as reactExports, j as jsxRuntimeExports, R as React, m as motion, A as AnimatePresence } from "./index-CIw_hSTm.js";
-import { c as clsx, a as cn, S as Skeleton } from "./skeleton-Bsk0OBcI.js";
-import { a as useTimeline } from "./useBackend-BJQQYzw9.js";
-import { B as BookOpen } from "./book-open-60M1Jkpz.js";
+import { c as createLucideIcon, r as reactExports, j as jsxRuntimeExports, R as React, m as motion, A as AnimatePresence } from "./index-BuHyn914.js";
+import { c as clsx, a as cn, S as Skeleton } from "./skeleton-Cqz9usGx.js";
+import { a as useTimeline } from "./useBackend-DajLxioc.js";
+import { B as BookOpen } from "./book-open-DbHIiC_L.js";
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -260,73 +260,73 @@ const CATEGORY_CONFIG = {
 const SAMPLE_ENTRIES = [
   {
     id: 1n,
-    year: 2024n,
-    title: "Appointed Full Professor",
-    description: "Promoted to Full Professor of Computational Neuroscience at the Indian Institute of Technology, Delhi — a recognition of three decades of distinguished scholarship.",
+    year: 2025n,
+    title: "Head of Geography Department, Army Cadet College",
+    description: "Presently serving as the Head of the Geography Department at the Army Cadet College (ACC) Wing of the Indian Military Academy (IMA), Dehradun.",
     category: { "#career": null }
   },
   {
     id: 2n,
-    year: 2023n,
-    title: "Cognitive Systems: A Modern Synthesis (3rd Ed.)",
-    description: "Third edition of the landmark textbook, adopted across 40+ universities worldwide. Expanded coverage of neural oscillations and predictive coding frameworks.",
-    category: { "#publication": null }
+    year: 2024n,
+    title: "Uttarakhand State Recipient",
+    description: "Honored with Uttarakhand state recognition for lifetime excellence in academic leadership and geographic research.",
+    category: { "#award": null }
   },
   {
     id: 3n,
-    year: 2022n,
-    title: "Fellow — Indian National Science Academy",
-    description: "Inducted as Fellow of the Indian National Science Academy for sustained contribution to neuroscience and mathematical modeling of biological systems.",
-    category: { "#award": null }
-  },
-  {
-    id: 4n,
-    year: 2021n,
-    title: "Principal Investigator — SERB CRG Grant",
-    description: "Awarded a three-year Core Research Grant from the Science and Engineering Research Board to investigate attentional mechanisms in cortical hierarchies.",
+    year: 2020n,
+    title: "Doctoral Degree Conferred",
+    description: "Awarded a Doctoral degree (PhD) in Geography for advanced research contributions to physical geography and polar studies.",
     category: { "#career": null }
   },
   {
-    id: 5n,
-    year: 2019n,
-    title: "Neural Dynamics of Working Memory (Monograph)",
-    description: "Monograph synthesising 15 years of experimental and computational work on the prefrontal-parietal network underlying working memory maintenance.",
+    id: 4n,
+    year: 1992n,
+    title: "Publication: 'Antarctica: Geopolitics and Resources'",
+    description: "Published his landmark book, standing as perhaps the first comprehensive book on Antarctica written by an Indian geographer.",
     category: { "#publication": null }
   },
   {
+    id: 5n,
+    year: 1984n,
+    title: "Pre-Antarctic Acclimatisation Course",
+    description: "Successfully underwent acclimatisation training at Sonemarg and Machhoi glacier under the High Altitude Warfare School (HAWS), Gulmarg.",
+    category: { "#career": null }
+  },
+  {
     id: 6n,
-    year: 2018n,
-    title: "Shanti Swarup Bhatnagar Prize",
-    description: "Received the Shanti Swarup Bhatnagar Prize in Biological Sciences — the highest science honour in India — for contributions to computational cognition.",
-    category: { "#award": null }
+    year: 1983n,
+    title: "Publication: 'SOCIAL FORESTRY IN THE PIN-DAR VALLEY'",
+    description: "Published a highly acclaimed study in the Indian Journal of Forestry, drawing wide international attention to Himalayan forest preservation.",
+    category: { "#publication": null }
   },
   {
     id: 7n,
-    year: 2015n,
-    title: "Associate Professor, IIT Delhi",
-    description: "Promoted to Associate Professor following successful tenure review, recognised for curriculum innovation and high-impact research output.",
+    year: 1978n,
+    title: "Head of Geography Faculty, Military School Belgaum",
+    description: "Appointed Head of the Faculty of Geography at the Military School, Belgaum, contributing to academic training.",
     category: { "#career": null }
   },
   {
     id: 8n,
-    year: 2012n,
-    title: "Handbook of Computational Neuroscience",
-    description: "Edited volume bringing together 28 contributors to survey the state of the field; widely cited as a graduate entry point to the discipline.",
-    category: { "#publication": null }
+    year: 1965n,
+    title: "Lecturer at N.A.S. College, Meerut",
+    description: "Began his distinguished teaching career, serving as a lecturer and shaping early academic curricula in geography.",
+    category: { "#career": null }
   },
   {
     id: 9n,
-    year: 2009n,
-    title: "Assistant Professor, IIT Delhi",
-    description: "Joined the Department of Cognitive Science at IIT Delhi following a postdoctoral fellowship at the Gatsby Computational Neuroscience Unit, UCL.",
+    year: 1960n,
+    title: "Master's Degree in Geography, AMU",
+    description: "Graduated with a Master's degree in Geography from Aligarh Muslim University.",
     category: { "#career": null }
   },
   {
     id: 10n,
-    year: 2007n,
-    title: "PhD — Computational Neuroscience",
-    description: "Awarded Doctor of Philosophy from IISc Bangalore under the supervision of Prof. R. Narasimhan. Thesis: 'Attractor Dynamics in Cortical Memory Circuits'.",
-    category: { "#career": null }
+    year: 1959n,
+    title: "Life Member of Indian Science Congress",
+    description: "Became a life member of the Indian Science Congress and the Indian Council of Geographers, committing to scientific progress.",
+    category: { "#award": null }
   }
 ];
 function TimelineEntryCard({
