@@ -47,7 +47,7 @@ export function Navbar() {
           </span>
           <div className="flex flex-col leading-tight">
             <span className="text-[10px] font-body font-bold text-accent tracking-[0.2em] uppercase">
-              First Antarctic PhD
+              Antarctic Studies Scholar
             </span>
             <span className="font-display text-base font-bold text-foreground tracking-wide">
               Dr. I.C. Sharma

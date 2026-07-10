@@ -81,29 +81,14 @@ module {
     if (state.nextId > 0) { return }; // already seeded
     let samples : [(Text, Text, Nat, Text, Text, Types.PublicationType)] = [
       (
-        "Cartography of the Cold: Mapping the End of the Earth",
-        "A definitive textbook on polar surveying methodologies. Describes technical approaches to triangulation, visual mapping, and astronomical navigation under sub-zero temperatures, forming the basis for later modern GPS mappings of ice structures.",
-        1984, "978-0-19-823120-1", "Oxford University Press", #book
+        "Antarctica: Geopolitics and Resources",
+        "Perhaps the first book written by an Indian Geographer on Antarctica. Details the geopolitical coordinates, boundary drawing issues, and polar resource potentials.",
+        1992, "978-8121002851", "Inter-India Publications", #book
       ),
       (
-        "Antarctica: The First Footprints of Science",
-        "A comprehensive historical and geographical retrospective of scientific activities in Antarctica. Focuses on the transition from competitive territorial exploration to collaborative environmental science under the Antarctic Treaty System.",
-        2018, "978-0-19-095321-1", "Oxford University Press", #book
-      ),
-      (
-        "Glaciological Geomorphology of Polar Ice Sheets",
-        "Published adaptation of Dr. Sharma's groundbreaking doctoral thesis, providing the first systematic description of glacier calving structures in the Dronning Maud Land quadrant.",
-        1963, "N/A", "Journal of the Royal Geographical Society", #paper
-      ),
-      (
-        "Micro-relief and Soil Formations of McMurdo Dry Valleys",
-        "An in-depth geological and geomorphological analysis of dry soils in Antarctica, detailing thermal contraction cracking patterns and wind-blown erosion.",
-        1973, "N/A", "Geoderma - International Soil Science Journal", #paper
-      ),
-      (
-        "A History of Antarctic Explorations and Cartographic Claims",
-        "A critical study tracing boundary drawing, cartographic records, and international claims over polar coordinates prior to the 1959 treaty.",
-        1995, "N/A", "Polar Record", #paper
+        "Social Forestry in the Pin-Dar Valley",
+        "A well-researched study drawing wide international attention on afforestation, geographic contours, and environmental ecology in the Pindari Valley region.",
+        1983, "N/A", "Indian Journal of Forestry", #paper
       )
     ];
     for ((title, description, year, isbn, publisher, pubType) in samples.vals()) {

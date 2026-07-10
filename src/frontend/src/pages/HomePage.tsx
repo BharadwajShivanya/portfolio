@@ -89,7 +89,7 @@ export default function HomePage() {
                 {...fadeUp(0.2)}
                 className="font-display text-xl md:text-2xl italic text-accent font-medium"
               >
-                First Human to Complete a Ph.D. on Antarctica
+                Pioneering Scholar of Antarctic Studies & Geographer
               </motion.h2>
             </div>
 
@@ -97,9 +97,7 @@ export default function HomePage() {
               {...fadeUp(0.3)}
               className="text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed font-body"
             >
-              A legendary glaciologist, cartographer, and explorer who dedicated
-              six decades to deciphering the maps, geography, and deep climate
-              memory locked within the polar ice caps.
+              An experienced geographer and scholar with over 31 years of teaching tenure across N.A.S. College and Military School Belgaum, presently leading the Geography Department at Army Cadet College, Indian Military Academy, Dehradun.
             </motion.p>
 
             <motion.div {...fadeUp(0.4)} className="flex flex-wrap gap-4 pt-2">
@@ -156,10 +154,10 @@ export default function HomePage() {
       <section className="py-12 bg-card/50 backdrop-blur-sm border-b border-border/40 relative z-10">
         <div className="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
           {[
-            { metric: "1st", label: "Polar Geography PhD" },
-            { metric: "14 Mo", label: "Antarctic Winter-Over" },
-            { metric: "12", label: "Major Polar Surveys" },
-            { metric: "95 Yrs", label: "Lifetime of Learning" },
+            { metric: "1992", label: "Pioneering Antarctic Book" },
+            { metric: "31+ Yrs", label: "Teaching Experience" },
+            { metric: "HAWS", label: "Acclimatisation Training" },
+            { metric: "State", label: "Uttarakhand Recipient" },
           ].map((stat, i) => (
             <motion.div
               key={stat.label}
@@ -285,25 +283,19 @@ export default function HomePage() {
           >
             <div className="space-y-6">
               <span className="text-xs font-bold uppercase tracking-[0.25em] text-accent">
-                Explorer Profile
+                Scholar Profile
               </span>
               <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground leading-tight">
-                Mapping the Frozen Wilderness
+                Decades of Scholarly Contribution
               </h2>
               <div className="w-12 h-1 bg-accent" />
 
               <div className="space-y-4 text-muted-foreground leading-relaxed font-body text-base md:text-lg">
                 <p>
-                  At a time when Antarctic travel was reserved for military
-                  scouts and major superpowers, Dr. Sharma set sail from India
-                  to join coordinates mapping efforts at the bottom of the
-                  world.
+                  With over three decades of dedicated teaching experience across prestigious institutions, Dr. Sharma has shaped generations of scholars in geography and physical sciences.
                 </p>
                 <p>
-                  His mapping of the Ellsworth range and glacier movements
-                  clarified how the continent's ice loads relate to sea-level
-                  variables. Now at 95, his focus is ensuring early mapping
-                  records are preserved for research institutions worldwide.
+                  His expertise in Antarctic studies was forged through high-altitude acclimatisation training at Sonemarg and Machhoi glacier under HAWS, Gulmarg, culminating in his pioneering 1992 book on the frozen continent's geopolitics and resources.
                 </p>
               </div>
 
@@ -330,18 +322,17 @@ export default function HomePage() {
 
                   <div className="space-y-2">
                     <span className="font-display text-7xl font-black block text-accent tracking-tighter">
-                      1962
+                      1992
                     </span>
                     <span className="text-xs font-bold tracking-[0.3em] uppercase opacity-75">
-                      First Antarctic PhD Conferred
+                      Pioneering Book on Antarctica
                     </span>
                   </div>
 
                   <div className="w-full h-px bg-white/10" />
 
                   <p className="text-xs italic max-w-xs opacity-80 font-body">
-                    "Glaciological Geomorphology of Polar Ice Sheets" — Royal
-                    Geographical Society Archives.
+                    "Antarctica: Geopolitics and Resources" — Perhaps the first book written by an Indian Geographer.
                   </p>
                 </div>
               </div>
@@ -376,7 +367,7 @@ export default function HomePage() {
             </blockquote>
             <div className="w-16 h-0.5 bg-accent mx-auto" />
             <footer className="text-xs md:text-sm font-bold uppercase tracking-[0.25em] text-accent">
-              — Dr. I.C. Sharma (Polar Keynote Address, 1990)
+              — Dr. I.C. Sharma
             </footer>
           </div>
         </div>

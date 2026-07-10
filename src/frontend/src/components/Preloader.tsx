@@ -13,7 +13,7 @@ export function Preloader({ onComplete }: { onComplete: () => void }) {
     } else if (progress < 50) {
       setCurrentWord("CARTOGRAPHY");
     } else if (progress < 75) {
-      setCurrentWord("ANTARCTICA 1962");
+      setCurrentWord("ANTARCTICA 1992");
     } else {
       setCurrentWord("DR. I.C. SHARMA");
     }
