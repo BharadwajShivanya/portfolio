@@ -11,7 +11,7 @@ const samplePublications: Publication[] = [
     publisher: "Inter-India Publications",
     year: BigInt(1992),
     pubType: PublicationType.book,
-    purchaseLink: "https://www.amazon.com/s?k=Antarctica+Geopolitics+and+Resources+Sharma",
+    purchaseLink: "https://www.amazon.com/Antarctica-Geopolitics-Ishwar-Chandra-Sharma/dp/8121002850/ref=sr_1_1?dib=eyJ2IjoiMSJ9.GJQqAbAoVcG-GWa0cstE2_PqFMjKQPs3rBe0e3kYyYH7Mq2ehIsZpj5GrhqPu28-36EfBQBeAHy-Jcs4tk0545kCabrrWnEk39oqXTpYMkN8TPoHlX2tNLNy5E5ALp-f9ktsH_lt6K_IsHIewCUvWaNH3w_V-okZ3WPg0ZINeejP9madc_7wrq1qhFDc76v4sPpSxBtoxtrVx1sNFU23Arao0uiU_yKrxuqdTX6MqIA.s1ba3iMsuAI3RYlcIPCB3PS0Egkqxfh1GQ6ePKeaJHg&dib_tag=se&keywords=Antarctica+Geopolitics+and+Resources+Sharma&qid=1783684622&sr=8-1",
   },
   {
     id: BigInt(2),
