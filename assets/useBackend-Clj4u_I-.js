@@ -7,7 +7,7 @@ var __privateAdd = (obj, member, value) => member.has(obj) ? __typeError("Cannot
 var __privateSet = (obj, member, value, setter) => (__accessCheck(obj, member, "write to private field"), setter ? setter.call(obj, value) : member.set(obj, value), value);
 var __privateMethod = (obj, member, method) => (__accessCheck(obj, member, "access private method"), method);
 var _client, _currentQuery, _currentQueryInitialState, _currentResult, _currentResultState, _currentResultOptions, _currentThenable, _selectError, _selectFn, _selectResult, _lastQueryWithDefinedData, _staleTimeoutId, _refetchIntervalId, _currentRefetchInterval, _trackedProps, _QueryObserver_instances, executeFetch_fn, updateStaleTimeout_fn, computeRefetchInterval_fn, updateRefetchInterval_fn, updateTimers_fn, clearStaleTimeout_fn, clearRefetchInterval_fn, updateQuery_fn, notify_fn, _a, _client2, _currentResult2, _currentMutation, _mutateOptions, _MutationObserver_instances, updateResult_fn, notify_fn2, _b;
-import { P as ProtocolError, T as TimeoutWaitingForResponseErrorCode, u as utf8ToBytes, b as ExternalError, d as MissingRootKeyErrorCode, e as Certificate, l as lookupResultToBuffer, f as RequestStatusResponseStatus, U as UnknownError, g as RequestStatusDoneNoReplyErrorCode, h as RejectError, i as CertifiedRejectErrorCode, k as UNREACHABLE_ERROR, I as InputError, n as InvalidReadStateRequestErrorCode, o as ReadRequestType, p as Principal, q as IDL, s as MissingCanisterIdErrorCode, H as HttpAgent, t as encode, Q as QueryResponseStatus, v as UncertifiedRejectErrorCode, w as isV3ResponseBody, x as isV2ResponseBody, y as UncertifiedRejectUpdateErrorCode, z as UnexpectedErrorCode, B as decode, S as Subscribable, D as pendingThenable, F as resolveEnabled, G as shallowEqualObjects, J as resolveStaleTime, K as noop, N as environmentManager, O as isValidTimeout, V as timeUntilStale, W as timeoutManager, Y as focusManager, Z as fetchState, _ as replaceData, $ as notifyManager, a0 as hashKey, a1 as getDefaultState, r as reactExports, a2 as shouldThrowError, a3 as useQueryClient, a4 as useInternetIdentity, a5 as createActorWithConfig, a6 as Record, a7 as Variant, a8 as Vec, a9 as Service, aa as Func, ab as Opt, ac as Nat, ad as Text, ae as Null, af as Int, ag as Bool } from "./index-BUfNHQ_G.js";
+import { P as ProtocolError, T as TimeoutWaitingForResponseErrorCode, u as utf8ToBytes, b as ExternalError, d as MissingRootKeyErrorCode, e as Certificate, l as lookupResultToBuffer, f as RequestStatusResponseStatus, U as UnknownError, g as RequestStatusDoneNoReplyErrorCode, h as RejectError, i as CertifiedRejectErrorCode, k as UNREACHABLE_ERROR, I as InputError, n as InvalidReadStateRequestErrorCode, o as ReadRequestType, p as Principal, q as IDL, s as MissingCanisterIdErrorCode, H as HttpAgent, t as encode, Q as QueryResponseStatus, v as UncertifiedRejectErrorCode, w as isV3ResponseBody, x as isV2ResponseBody, y as UncertifiedRejectUpdateErrorCode, z as UnexpectedErrorCode, B as decode, S as Subscribable, D as pendingThenable, F as resolveEnabled, G as shallowEqualObjects, J as resolveStaleTime, K as noop, N as environmentManager, O as isValidTimeout, V as timeUntilStale, W as timeoutManager, Y as focusManager, Z as fetchState, _ as replaceData, $ as notifyManager, a0 as hashKey, a1 as getDefaultState, r as reactExports, a2 as shouldThrowError, a3 as useQueryClient, a4 as useInternetIdentity, a5 as createActorWithConfig, a6 as Record, a7 as Variant, a8 as Vec, a9 as Service, aa as Func, ab as Opt, ac as Nat, ad as Text, ae as Null, af as Int, ag as Bool } from "./index-B1GuySlE.js";
 const FIVE_MINUTES_IN_MSEC = 5 * 60 * 1e3;
 function defaultStrategy() {
   return chain(conditionalDelay(once(), 1e3), backoff(1e3, 1.2), timeout(FIVE_MINUTES_IN_MSEC));
@@ -2040,7 +2040,7 @@ var TimelineCategory = /* @__PURE__ */ ((TimelineCategory2) => {
   TimelineCategory2["publication"] = "publication";
   return TimelineCategory2;
 })(TimelineCategory || {});
-[
+const samplePublications = [
   {
     id: BigInt(1),
     title: "Antarctica: Geopolitics and Resources",
@@ -2064,7 +2064,7 @@ var TimelineCategory = /* @__PURE__ */ ((TimelineCategory2) => {
     purchaseLink: "https://example.com/social-forestry-pindar"
   }
 ];
-[
+const sampleResearch = [
   {
     id: BigInt(1),
     title: "Glacier Acclimatisation and Physical Geomorphology in Sonemarg",
@@ -2086,7 +2086,7 @@ var TimelineCategory = /* @__PURE__ */ ((TimelineCategory2) => {
     coAuthors: ["Dr. Anita Sharma"]
   }
 ];
-[
+const sampleGalleryImages = [
   {
     id: BigInt(1),
     imageUrl: "https://via.placeholder.com/600x400/1a2744/f5f0e8?text=Gulmarg+1984",
@@ -2109,7 +2109,7 @@ var TimelineCategory = /* @__PURE__ */ ((TimelineCategory2) => {
     year: BigInt(2023)
   }
 ];
-[
+const sampleTimeline = [
   {
     id: BigInt(1),
     title: "Head of Geography Department, Army Cadet College",
@@ -2160,9 +2160,40 @@ var TimelineCategory = /* @__PURE__ */ ((TimelineCategory2) => {
     category: TimelineCategory.career
   }
 ];
+const mockBackend = {
+  addGalleryImage: async (input) => ({ id: BigInt(Date.now()), ...input }),
+  addPublication: async (input) => ({ id: BigInt(Date.now()), ...input }),
+  addResearch: async (input) => ({ id: BigInt(Date.now()), ...input }),
+  addTimelineEntry: async (input) => ({ id: BigInt(Date.now()), ...input }),
+  deleteContactMessage: async () => true,
+  deleteGalleryImage: async () => true,
+  deletePublication: async () => true,
+  deleteResearch: async () => true,
+  deleteTimelineEntry: async () => true,
+  getGalleryImage: async (id) => sampleGalleryImages.find((g) => g.id === id) ?? null,
+  getPublication: async (id) => samplePublications.find((p) => p.id === id) ?? null,
+  getResearch: async (id) => sampleResearch.find((r) => r.id === id) ?? null,
+  getTimelineEntry: async (id) => sampleTimeline.find((t) => t.id === id) ?? null,
+  listContactMessages: async () => [],
+  listGalleryImages: async () => sampleGalleryImages,
+  listPublications: async () => samplePublications,
+  listResearch: async () => sampleResearch,
+  listTimelineEntries: async () => sampleTimeline,
+  submitContactMessage: async (input) => ({
+    id: BigInt(Date.now()),
+    ...input,
+    timestamp: BigInt(Date.now())
+  }),
+  updateGalleryImage: async (id, input) => ({ id, ...input }),
+  updatePublication: async (id, input) => ({ id, ...input }),
+  updateResearch: async (id, input) => ({ id, ...input }),
+  updateTimelineEntry: async (id, input) => ({ id, ...input })
+};
 function useActorBase() {
-  const base = useActor(createActor);
-  return base;
+  useActor(createActor);
+  {
+    return { actor: mockBackend, isFetching: false };
+  }
 }
 function usePublications() {
   const { actor, isFetching } = useActorBase();

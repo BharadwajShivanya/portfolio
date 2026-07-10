@@ -1,7 +1,7 @@
-import { c as createLucideIcon, j as jsxRuntimeExports, m as motion, L as Link, M as Mail, C as Compass, E as ExternalLink } from "./index-BUfNHQ_G.js";
-import { u as usePublications } from "./useBackend-B5XbC_KQ.js";
-import { u as useScrollReveal } from "./useScrollReveal-DYClFztw.js";
-import { B as BookOpen } from "./book-open-NS-xxWjI.js";
+import { c as createLucideIcon, j as jsxRuntimeExports, m as motion, L as Link, M as Mail, C as Compass, E as ExternalLink } from "./index-B1GuySlE.js";
+import { u as usePublications } from "./useBackend-Clj4u_I-.js";
+import { u as useScrollReveal } from "./useScrollReveal-k2VKeIRJ.js";
+import { B as BookOpen } from "./book-open-DU_THSuX.js";
 /**
  * @license lucide-react v0.511.0 - ISC
  *
