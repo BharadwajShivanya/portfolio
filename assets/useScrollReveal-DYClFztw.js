@@ -1,4 +1,4 @@
-import { r as reactExports } from "./index-BuHyn914.js";
+import { r as reactExports } from "./index-BUfNHQ_G.js";
 function useScrollReveal(options = {}) {
   const ref = reactExports.useRef(null);
   reactExports.useEffect(() => {
